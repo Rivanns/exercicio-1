@@ -1,0 +1,7 @@
+:host{
+    height: max-content;
+    width: max-content;
+    justify-self: left;
+    position: fixed;
+    left: 0;
+}

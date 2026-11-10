@@ -1,0 +1,8 @@
+:host{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    font-size: large;
+    top: 0;
+}
