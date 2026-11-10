@@ -2,6 +2,7 @@
     position: sticky;
     display: flex;
     justify-content: center;
+    color: goldenrod;
     background-color: darkgreen;
     font-size: large;
     top: 0;

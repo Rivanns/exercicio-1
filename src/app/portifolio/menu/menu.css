@@ -4,4 +4,6 @@
     justify-self: left;
     position: fixed;
     left: 0;
+    color: goldenrod;
+    flex-direction: column;
 }

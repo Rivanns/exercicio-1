@@ -1,9 +1,10 @@
 :host{
-    height: auto;
-    width: auto;
+    height: initial;
+    width: initial;
     justify-content: center;
     position: fixed;
     bottom: 0;
+    color: goldenrod;
     background-color: black;
-    
+    display: flex;
 }
