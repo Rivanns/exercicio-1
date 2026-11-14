@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Portifolio } from './portifolio/portifolio';
+import { ExemploObjeto } from './exemplo-objeto/exemplo-objeto';
 
 
 @Component({
-  imports: [RouterOutlet, Portifolio],
+  imports: [RouterOutlet, Portifolio, ExemploObjeto],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

@@ -1,8 +1,9 @@
-:host{
-    justify-content: center;
-    position: fixed;
-    right: 0;
-    margin: auto;
+:host {
+    display: block;
+    max-width: 800px;
+    margin: 20px 40px 20px 260px; /* Diminuído de 80px para 20px */
+    padding: 20px;
+    text-align: center;
     color: goldenrod;
     background-color: darkgreen;
 }

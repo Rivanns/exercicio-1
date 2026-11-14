@@ -1,9 +1,12 @@
-:host{
+:host {
     position: sticky;
+    top: 0;
+    z-index: 10;            /* Garante que o header fique sempre por cima ao rolar */
     display: flex;
+    align-items: center;    /* Centraliza o texto na vertical */
     justify-content: center;
+    height: 60px;           /* Altura fixa para sabermos onde o menu deve começar */
     color: goldenrod;
     background-color: darkgreen;
     font-size: large;
-    top: 0;
 }

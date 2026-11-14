@@ -1,9 +1,13 @@
-:host{
-    height: initial;
-    width: 97%;
-    justify-content: center;
+:host {
     position: fixed;
     bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    justify-content: center;
+    padding: 12px 20px;
+    text-align: center;
     color: goldenrod;
     background-color: black;
     display: flex;

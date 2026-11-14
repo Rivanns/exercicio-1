@@ -1,9 +1,41 @@
-:host{
-    height: max-content;
-    width: max-content;
-    justify-self: left;
-    position: fixed;
-    left: 0;
-    color: goldenrod;
+:host {
+    display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 60px;                       /* Fica abaixo do header */
+    left: 0;
+    width: 240px;                    /* Um pouco mais largo para caber os nomes */
+    max-height: calc(100vh - 110px); /* Evita que a lista passe por trás do footer */
+    overflow-y: auto;                /* Cria barra de rolagem se a lista crescer */
+    padding: 16px;
+    box-sizing: border-box;
+    color: goldenrod;
+}
+
+h3 {
+    margin: 12px 0 8px 0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid goldenrod;
+    padding-bottom: 4px;
+}
+
+h3:first-child {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0 0 12px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+li {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    background-color: rgba(0, 100, 0, 0.3);
+    border-left: 3px solid goldenrod;
 }
