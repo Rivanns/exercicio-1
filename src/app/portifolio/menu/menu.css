@@ -1,9 +1,6 @@
 :host {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 60px;                       /* Fica abaixo do header */
-    left: 0;
     width: 240px;                    /* Um pouco mais largo para caber os nomes */
     max-height: calc(100vh - 110px); /* Evita que a lista passe por trás do footer */
     overflow-y: auto;                /* Cria barra de rolagem se a lista crescer */

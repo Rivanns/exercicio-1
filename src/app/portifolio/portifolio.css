@@ -1,0 +1,17 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .conteudo {
+        flex-direction: column;
+    }
+}

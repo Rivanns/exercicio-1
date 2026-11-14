@@ -28,7 +28,7 @@ pessoa2: Pessoa ={
   nome: 'Adelaide',
   sexo: 'feminino',
   data_nasc: '19/10/1994',
-  estado_civil: 'soteira'
+  estado_civil: 'solteira'
 }
 
 mercado1: Mercado ={
