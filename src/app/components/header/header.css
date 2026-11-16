@@ -1,0 +1,10 @@
+nav{
+    color: goldenrod;
+    background-color: darkgreen;
+}
+
+:active{
+    color: forestgreen;
+    background-color: goldenrod;
+}
+
