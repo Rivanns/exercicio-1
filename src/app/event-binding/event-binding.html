@@ -1,0 +1,6 @@
+<button [class.botao-desabilitado]= "botaoDesabilitado"(click)= "registrarClick()" [disabled]="botaoDesabilitado">Clique aqui</button>
+<p (mouseover)="registrarHover()">Passe o mouse aqui</p>
+
+
+<input type="text"[(ngModel)]="texto">
+<p>{{texto}}</p>

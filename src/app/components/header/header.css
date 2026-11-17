@@ -1,4 +1,8 @@
 nav{
+    display: block;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
     color: goldenrod;
     background-color: darkgreen;
 }
