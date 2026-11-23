@@ -12,6 +12,7 @@ export class EventBinding {
   texto= '';
   urlImagem = '';
   nomeComImagem = '';
+  nomesTabela = '';
 
   botaoDesabilitado = false;
 
@@ -22,5 +23,5 @@ export class EventBinding {
   registrarHover(): void {
     console.log('Passou o mouse!');
   }
-
+  incrementaClick() {}
 }
