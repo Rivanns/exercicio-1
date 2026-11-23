@@ -1,6 +1,19 @@
-<button [class.botao-desabilitado]= "botaoDesabilitado"(click)= "registrarClick()" [disabled]="botaoDesabilitado">Clique aqui</button>
-<p (mouseover)="registrarHover()">Passe o mouse aqui</p>
+<button [class.botao-desabilitado]= "botaoDesabilitado"
+         (click)= "registrarClick()" 
+        [disabled]="botaoDesabilitado">
+    Clique aqui
+</button>
 
+<p (mouseover)="registrarHover()">Passe o mouse aqui</p>
 
 <input type="text"[(ngModel)]="texto">
 <p>{{texto}}</p>
+
+<input [(ngModel)] = "urlImagem" type="text" placeholder="Insira a url de uma imagem">
+<img [src]= "urlImagem" alt="">
+
+<input [(ngModel)] = "nomeComImagem" type="text" placeholder="Insira um nome">
+@if (nomeComImagem === 'Lazaro') {
+<img src= "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Juan_de_Flandes_001.jpg/250px-Juan_de_Flandes_001.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail" alt="">
+}
+

@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 export class EventBinding {
 
   texto= '';
+  urlImagem = '';
+  nomeComImagem = '';
 
   botaoDesabilitado = false;
 
@@ -20,4 +22,5 @@ export class EventBinding {
   registrarHover(): void {
     console.log('Passou o mouse!');
   }
+
 }
