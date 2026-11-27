@@ -5,10 +5,11 @@ import { ExemploObjeto } from './exemplo-objeto/exemplo-objeto';
 import { Header } from './components/header/header';
 import { EventBinding } from './event-binding/event-binding';
 import { Exercicio6 } from './exercicio-6/exercicio-6';
+import { ExemploForm } from './exemplo-form/exemplo-form';
 
 
 @Component({
-  imports: [RouterOutlet, Portifolio, ExemploObjeto, Header, EventBinding, Exercicio6],
+  imports: [RouterOutlet, Portifolio, ExemploObjeto, Header, EventBinding, Exercicio6, ExemploForm],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
