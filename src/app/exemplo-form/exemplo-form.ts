@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { AlunoRequest } from './aluno-request';
 import { form, FormField } from '@angular/forms/signals';
+import { AlunosService } from './alunos-service';
 
 @Component({
   imports: [FormField],
@@ -9,6 +10,8 @@ import { form, FormField } from '@angular/forms/signals';
   templateUrl: './exemplo-form.html',
 })
 export class ExemploForm {
+
+  private readonly service = inject(AlunosService);
 
   private alunoModel = signal<AlunoRequest>({
     nome: '',
@@ -24,7 +27,15 @@ export class ExemploForm {
     
     event.preventDefault();
 
-    console.log(this.alunoModel());
+    this.service.cadastrarAluno(this.alunoModel()).subscribe({
+      next:() => {
+        alert('Deu certo a requisição!');
+      },
+      error: () => {
+        alert('Deu ruim :(');
+      }
+    });
+
   }
 
 }
